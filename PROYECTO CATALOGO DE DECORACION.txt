@@ -1,0 +1,38 @@
+PROYECTO CATALOGO DE DECORACION
+
+archivo README.md
+No olvides crear este archivo en la raíz de tu carpeta. Puedes poner algo simple como:
+
+Proyecto de Catálogo de Decoración
+Este proyecto es una interfaz de usuario para una empresa de fabricación de artículos de yeso y madera.
+Se utilizó HTML5 semántico, CSS3 para el diseño y Formspree para la gestión del formulario de contacto.
+
+
+
+
+
+1. Propuesta de Contenido
+Header: Logo de la empresa y nombre.
+
+Nav: Enlaces a "Inicio", "Catálogo" (donde mostrarías lo que hay en tu DB) y "Contacto".
+
+Main:
+
+Section 1 (Hero): Una imagen de fondo (propiedad background) con un título impactante sobre tus piezas artesanales.
+
+Section 2 (Sobre los Materiales): Breve explicación de tus procesos en madera, yeso y resina.
+
+Footer: Información de derechos de autor y redes sociales.
+
+2. Estructura de Archivos Recomendada
+Para mantener el orden que piden en las clases de Front End:
+
+
+/proyecto-decoracion
+│
+├── /assets
+│   ├── /img          (tus fotos de piezas de resina/madera)
+│   └── /fonts        (opcional, si no usas Google Fonts directamente)
+├── index.html
+├── styles.css
+└── README.md         (explicación del proyecto)
