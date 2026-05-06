@@ -205,13 +205,20 @@
         <h3>Escribinos</h3>
 
         <form action="https://formspree.io/f/xeenebob" method="POST">
-                        <label for="nombre">Ingrese su nombre</label>
-                        <input type="text" name="nombre" placeholder="Nombre" required>
-                        <label for="nombre">Ingrese su nombre</label>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <textarea name="mensaje" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="btn">Enviar mensaje</button>
-                    </form>
+    
+    <label for="nombre">Ingrese su nombre</label>
+    <input type="text" name="nombre" id="nombre" placeholder="Tu nombre completo" required>
+
+    <label for="email">Ingrese su correo electrónico</label>
+    <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" required>
+
+    
+    <label for="mensaje">Su mensaje</label>
+    <textarea name="mensaje" id="mensaje" placeholder="¿En qué podemos ayudarte?"></textarea>
+
+   
+    <button type="submit" class="inner-btn">Enviar mensaje</button>
+</form>
                 
 
     </div>
