@@ -13,7 +13,7 @@
 
     <header class="header">
 
-    <div class="container">
+        <div class="container">
 
         <h1 class="logo">
         <img src="./IMG/logoartesanos.jpg" alt="Logo Artesanos SRL">
@@ -53,6 +53,17 @@
 <section class="artesanos-sections" id="Articulos">
 
     <h2 class="section-title">Nuestros Artículos</h2>
+    <p class="articulos-subtitle">Piezas únicas hechas a mano — yeso, madera y resina</p>
+
+    <div class="filtros">
+    <button class="filtro-btn activo" onclick="filtrar('todos', this)">Todos</button>
+    <button class="filtro-btn" onclick="filtrar('yeso', this)">Esculturas de yeso</button>
+    <button class="filtro-btn" onclick="filtrar('madera', this)">Artículos de madera</button>
+    <button class="filtro-btn" onclick="filtrar('resina', this)">Artículos de resina</button>
+  </div>
+
+  <div class="productos-grid" id="productos-grid">
+    
     <div class="cards-container">
 
     <!-- Card 1 -->
