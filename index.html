@@ -55,6 +55,8 @@
 <section class="artesanos-sections" id="Articulos">
             <h2 class="section-title">Nuestros Artículos</h2>
             <p class="articulos-subtitulo">Piezas únicas hechas a mano — yeso, madera y resina</p>
+             
+            <!-- Filtros -->
 
             <div class="filtros">
                 <button class="filtro-btn activo" onclick="filtrar('todos', this)">Todos</button>
@@ -63,10 +65,12 @@
                 <button class="filtro-btn" onclick="filtrar('resina', this)">Artículos de resina</button>
             </div>
 
-            <!-- Grilla de productos -->
+             <!-- Grilla de productos -->
+
             <div class="productos-grid" id="productos-grid">
 
-                <!-- YESO 1 -->
+               <!-- YESO 1 -->
+
                 <div class="prod-card" data-cat="yeso">
                     <div class="prod-img-wrap">
                         <img src="./IMG/set_de_6_budas.jpg" alt="Set de 6 Budas arcoíris">
@@ -86,9 +90,10 @@
                 </div>
 
                 <!-- YESO 2 -->
+
                 <div class="prod-card" data-cat="yeso">
                     <div class="prod-img-wrap">
-                        <img src="./IMG/busto decorativo.jpg" alt="Busto decorativo">
+                        <img src="./IMG/busto_decorativo.jpg" alt="Busto decorativo">
                         <span class="prod-badge badge-yeso">Yeso</span>
                     </div>
                     <div class="prod-body">
@@ -103,8 +108,8 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- YESO 3 -->
+                  
+                <!-- YESO 3 -->                
                 <div class="prod-card" data-cat="yeso">
                     <div class="prod-img-wrap">
                         <img src="./IMG/Figura_floral_orgánica.jpg" alt="Figura floral orgánica">
@@ -122,8 +127,8 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- MADERA 1 -->
+                 
+                <!-- MADERA 1 -->               
                 <div class="prod-card" data-cat="madera">
                     <div class="prod-img-wrap">
                         <img src="./IMG/Estante_live_edge.jpg" alt="Estante live edge">
@@ -237,16 +242,16 @@
                     </div>
                 </div>
 
-            </div><!-- /productos-grid -->
+            </div>
         </section>
 
 
-
+<!-- ── RESEÑAS ─────────────────────────────── -->
 <section class="resenias-section" id="resenia-section">
     <h2 class="section-title">Lo que dicen nuestros clientes</h2>
 
     <div class="resenia-container">
-    <!-- Reseña 1 -->
+    
 
         <div class="resenia-card">
             <p class="resenia-text">
@@ -265,9 +270,9 @@
 
         </div>
 
-    <!-- Reseña 2 -->
+   
 
-    <div class="resenia-card">
+         <div class="resenia-card">
         <p class="resenia-text">
         "Excelente atención y cuidado en el envío"
         </p>
@@ -284,7 +289,7 @@
 
     </div>
 
-    <!-- Reseña 3 -->
+    
 
     <div class="resenia-card">
         <p class="resenia-text">
@@ -303,7 +308,7 @@
 
     </div>
 
-    <!-- Reseña 4 -->
+    
     <div class="resenia-card">
         <p class="resenia-text">
         "Calidad artesanal real"
@@ -326,6 +331,8 @@
 </div>
 
 </section>
+ 
+<!-- ── CONTACTO ───────────────────────────── -->
 
 <section class="contacto-section" id="contacto" >
     <h2 class="section-title">Contacto</h2>
@@ -338,7 +345,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13154.139711160247!2d-58.50076342111276!3d-34.48932052955809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1a908f3e4a9%3A0xb91c48582650064a!2sAv.%20Sta%20Fe%201985%2C%20B1640%20Mart%C3%ADnez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1777828930080!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-    <!-- Formulario -->
+    
 
     <div class="contacto-form">
         <h3>Escribinos</h3>
@@ -368,7 +375,7 @@
 
 </main>
 
-
+ <!-- ── FOOTER ─────────────────────────────────── -->
 
 <footer class="footer">
     <div class="footer-container">
@@ -404,13 +411,15 @@
         <p>© 2026 Artesanos SRL | Todos los derechos reservados</p>
     </div>
 </footer>
+
+<!-- ── BOTÓN FLOTANTE CARRITO ─────────────────── -->
 <button id="carrito-fab" onclick="abrirCarrito()" aria-label="Abrir carrito">
         🛒
         <span id="carrito-contador"></span>
     </button>
 
-    
-    <div id="carrito-overlay" onclick="cerrarCarrito()"></div>
+  <!-- ── OVERLAY + DRAWER ───────────────────────── -->
+<div id="carrito-overlay" onclick="cerrarCarrito()"></div>
 
     <div id="carrito-drawer" role="dialog" aria-label="Carrito de compras">
         <div class="drawer-header">
@@ -434,7 +443,7 @@
         </div>
     </div>
 
-    
+    <!-- ── MODAL CONFIRMACIÓN ─────────────────────── -->
     <div id="modal-overlay">
         <div id="modal-box" role="dialog" aria-modal="true">
             <div class="modal-icono">🎉</div>
@@ -445,10 +454,11 @@
         </div>
     </div>
 
-    
+     <!-- ── TOAST ──────────────────────────────────── -->
     <div id="toast" role="status" aria-live="polite"></div>
 
-    
+    <!-- ── SCRIPTS ────────────────────────────────── -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./JS/carrito.js"></script>
 
 
